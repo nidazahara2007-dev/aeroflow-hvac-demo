@@ -1,7 +1,17 @@
-{
+﻿{
   "name": "aeroflow-hvac-demo",
+  "main": "src/worker.js",
   "compatibility_date": "2026-10-23",
   "assets": {
-    "directory": "./public"
-  }
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "aeroflow-hvac-db",
+      "database_id": "03fbb071-365d-4e9e-af48-8578e907a8ad"
+    }
+  ]
 }
